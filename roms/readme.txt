@@ -1,0 +1,1 @@
+place the concatenated space invaders rom file and name it "invaders" here. (a single invaders file which include [invaders.h, invaders.g, invaders.f, invaders.e])
