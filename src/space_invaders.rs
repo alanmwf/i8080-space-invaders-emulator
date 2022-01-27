@@ -16,7 +16,7 @@ pub struct SpaceInvaders {
 impl SpaceInvaders {
     pub fn new() -> Self {
         let mut cpu = CPU::default();
-        let mut file = File::open("./roms/space-invaders/invaders").unwrap();
+        let mut file = File::open("./roms/invaders").unwrap();
         let mut buffer = Vec::new();
 
         file.read_to_end(&mut buffer).unwrap();
@@ -158,7 +158,7 @@ impl Default for SpaceInvadersMachine {
             shift0: 0,
             shift1: 0,
             shift_offset: 0,
-            port: 0,
+            port: 0x08,
             audio: SpaceInvadersAudio::new(),
         }
     }
